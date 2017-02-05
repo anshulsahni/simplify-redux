@@ -1,21 +1,21 @@
-# simple-redux
+# simplify-redux
 A js library containing utilities to simplify tasks involved for setting up redux global state. This library currently provides easy interface for creating constants, action creators return nothing but the action (without any data), and creating reducers.
 
 ## Installation
 ```
-npm install simple-redux
+npm install simplify-redux
 ```
 **or**
 ```
-git clone git@github.com:anshulsahni/simple-redux.git
+git clone git@github.com:anshulsahni/simplify-redux.git
 npm install /path/to/clone/repository
 ```
 
 ## Usage
 
 ```
-import simpleRedux from 'simple-redux'
-export default simpleRedux.getConsts(
+import simplifyRedux from 'simplify-redux'
+export default simplifyRedux.getConsts(
 'CONSTANT_ONE',
 'CONSTANT_TWO',
 );
@@ -28,7 +28,7 @@ This function returns an object containing the string constants as properties of
 
 Example
 ```
-import { getConsts } from 'simple-redux';
+import { getConsts } from 'simplify-redux';
 
 return getConsts(
 'CONSTANT_ONE',
@@ -41,12 +41,12 @@ return getConsts(
 
 ```
 
-### createSimpleActionCreators
+### createSimplefyActionCreators
 This method returns an object which contains methods that returns action creators which returns only action without any data
 
 Example
 ```
-import { getSimpleActionCreators } from 'simple-redux';
+import { getSimpleActionCreators } from 'simplify-redux';
 
 const actions =  {
   ...getSimpleActionCreators(
@@ -68,7 +68,7 @@ This method takes in initialState and action handlers as arguments, in which han
 
 Example
 ```
-import { createReducer } from 'simple-redux';
+import { createReducer } from 'simplify-redux';
 
 const initialState = {
   messages: [],

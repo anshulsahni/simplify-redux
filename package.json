@@ -1,5 +1,5 @@
 {
-  "name": "simple-redux",
+  "name": "simplify-redux",
   "version": "0.0.1",
   "description": "A js library containing redux utilities to simplify tasks involved for setting up redux global state",
   "main": "index.js",
