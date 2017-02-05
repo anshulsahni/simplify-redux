@@ -1,0 +1,17 @@
+#Circle CI config file
+machine:
+
+  #Version of node
+  node:
+    version:
+      v6.9.5
+
+# dependencies
+dependencies:
+  pre:
+    - npm install
+
+#testing commands
+test:
+  post:
+    - npm test
