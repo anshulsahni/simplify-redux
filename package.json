@@ -4,7 +4,8 @@
   "description": "A js library containing redux utilities to simplify tasks involved for setting up redux global state",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint ./*.js"
   },
   "repository": {
     "type": "git",

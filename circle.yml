@@ -13,5 +13,7 @@ dependencies:
 
 #testing commands
 test:
+  pre:
+    - npm run lint
   post:
     - npm test
