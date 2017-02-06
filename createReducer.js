@@ -1,11 +1,11 @@
-module.exports = function(initialState, handlers) {
-  handlers = handlers || {};
-  return function(state, action) {
-    const handler = handlers[action.type];
-    state = state || initialState;
+module.exports = function (initialState, handlers) {
+  var _handlers = handlers || {};
+  return function (state, action) {
+    const handler = _handlers[action.type];
+    var _state = state || initialState;
     if (handler) {
-      return handler(state, action);
+      return handler(_state, action);
     }
-    return state;
-  }
+    return _state;
+  };
 };
