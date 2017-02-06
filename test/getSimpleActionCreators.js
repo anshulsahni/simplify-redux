@@ -53,7 +53,7 @@ describe('getSimpleActionCreators', function() {
     });
 
     it('should return method returning object with type property with value of same string', function() {
-      assert.deepStrictEqual({ type: 'SET_NETWORK_FREE' }, result.setNetworkBusy());
+      assert.deepStrictEqual({ type: 'SET_NETWORK_BUSY' }, result.setNetworkBusy());
     });
   });
 

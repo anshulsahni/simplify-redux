@@ -4,7 +4,8 @@
   "description": "A js library containing redux utilities to simplify tasks involved for setting up redux global state",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint ./*.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/anshulsahni/simple-redux#readme",
   "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-es5": "^1.1.0",
+    "eslint-config-canonical": "^7.1.0",
     "mocha": "^3.2.0"
   },
   "files": [
